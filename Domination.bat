@@ -1,6 +1,6 @@
 echo off
 cls
-title Domination
+title Squirrel 3D engine
 color 07
 mode con cols=40 lines=23
 set nosave=n
@@ -20,10 +20,10 @@ del "temp.bat"
 if exist "Y:\" net use Y: /delete
 cls
 set input=0
-echo Domination Menu
+echo Squirrel 3D engine Menu
 echo ------------------
 echo 1 = Game Options
-echo 2 = Map Builder
+echo 2 = Game Builder
 echo 3 = Controls
 echo 4 = Exit
 set /p input=INPUT:
@@ -35,11 +35,11 @@ goto menu
 :gameoptions
 cls
 set input=0
-echo Domination Game Options
+echo Squirrel 3D engine Game Options
 echo ------------------------
 echo %username% [%score%]
 echo ------------------------
-echo 1 = Create Game
+echo 1 = Run Game
 echo 2 = Join Game
 echo 3 = Settings
 echo 4 = Back
@@ -60,7 +60,7 @@ if "%renderdistance%"=="5" set levels=Normal
 if "%renderdistance%"=="4" set levels=Minimum
 cls
 set input=0
-echo Domination Settings
+echo Squirrel 3D engine Settings
 echo ---------------------------
 echo Render Distance: %renderdistance%
 echo Overall Quality: %levels%
